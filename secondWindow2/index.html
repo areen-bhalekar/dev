@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Parameters</title>
+    <link rel="stylesheet" href="../secondWindow/index.css">
+</head>
+
+<body>
+    <div class="minMaxValues">
+        <div class="currentValues">
+            <div class="input-with-unit">
+                <input type="text" id="currentMin" value="" placeholder="Min Current">
+                <span class="unit">mA</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="currentMax" value="" placeholder="Max Current">
+                <span class="unit">mA</span>
+            </div>
+            <button id="toggleCurrent">Toggle Current</button>
+        </div>
+        <div class="voltageValues">
+            <div class="input-with-unit">
+                <input type="text" id="voltageMin" value="" placeholder="Min Voltage">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="voltageMax" value="" placeholder="Max Voltage">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleVoltage">Toggle Voltage</button>
+        </div>
+        <div class="temperatureValues">
+            <div class="input-with-unit">
+                <input type="text" id="temperatureMin" value="" placeholder="Min Temperature">
+                <span class="unit">°C</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="temperatureMax" value="" placeholder="Max Temperature">
+                <span class="unit">°C</span>
+            </div>
+            <button id="toggleTemperature">Toggle Temperature</button>
+        </div>
+        <div class="capacityValues">
+            <div class="input-with-unit">
+                <input type="text" id="capacityMin" value="" placeholder="Min Capacity">
+                <span class="unit">mAh</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="capacityMax" value="" placeholder="Max Capacity">
+                <span class="unit">mAh</span>
+            </div>
+            <button id="toggleCapacity">Toggle Capacity</button>
+        </div>
+        <div class="dischargeTimeValues">
+            <div class="input-with-unit">
+                <input type="text" id="dischargeTimeMin" value="" placeholder="Min dischargeTime">
+                <span class="unit">min</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="dischargeTimeMax" value="" placeholder="Max dischargeTime">
+                <span class="unit">min</span>
+            </div>
+            <button id="toggledischargeTime">Toggle Discharge Time</button>
+        </div>
+        <div class="chargingTimeValues">
+            <div class="input-with-unit">
+                <input type="text" id="chargingTimeMin" value="" placeholder="Min chargingTime">
+                <span class="unit">min</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="chargingTimeMax" value="" placeholder="Max chargingTime">
+                <span class="unit">min</span>
+            </div>
+            <button id="togglechargingTime">Toggle Charging Time</button>
+        </div>
+        <div class="cycleCountValues">
+            <div class="input-with-unit">
+                <input type="text" id="cycleCountMin" value="" placeholder="Min Cycle Count">
+                <span class="unit">No.</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cycleCountMax" value="" placeholder="Max Cycle Count">
+                <span class="unit">No.</span>
+            </div>
+            <button id="toggleCycleCount">Toggle Cycle Count</button>
+        </div>
+        <div class="batteryPercentage">
+            <div class="input-with-unit">
+                <input type="text" id="batteryPercentageMin" value="" placeholder="Min Percentage">
+                <span class="unit">%</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="batteryPercentageMax" value="" placeholder="Max Percentage">
+                <span class="unit">%</span>
+            </div>
+            <button id="toggleBatteryPercentage">Toggle Battery%</button>
+        </div>
+        <div class="batteryHealth">
+            <div class="input-with-unit">
+                <input type="text" id="batteryHealthMin" value="" placeholder="Min Health">
+                <span class="unit">%</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="batteryHealthMax" value="" placeholder="Max Health">
+                <span class="unit">%</span>
+            </div>
+            <button id="toggleBatteryHealth">Toggle Battery Health</button>
+        </div>
+        <div class="safetyStatus">
+            <div class="input-with-unit">
+                <input type="text" id="safetyStatusMin" value="" placeholder="Min Safety">
+                <span class="unit">No.</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="safetyStatusMax" value="" placeholder="Max Safety">
+                <span class="unit">No.</span>
+            </div>
+            <button id="toggleSafetyStatus">Toggle Safety Status</button>
+        </div>
+        <div class="operationStatus">
+            <div class="input-with-unit">
+                <input type="text" id="operationStatusMin" value="" placeholder="Min Operation">
+                <span class="unit">No.</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="operationStatusMax" value="" placeholder="Max Operation">
+                <span class="unit">No.</span>
+            </div>
+            <button id="toggleOperationStatus">Toggle Operation Status</button>
+        </div>
+        <div class="chargingStatus">
+            <div class="input-with-unit">
+                <input type="text" id="chargingStatusMin" value="" placeholder="Min Charging">
+                <span class="unit">No.</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="chargingStatusMax" value="" placeholder="Max Charging">
+                <span class="unit">No.</span>
+            </div>
+            <button id="toggleChargingStatus">Toggle Charging Status</button>
+        </div>
+        <div class="guagingStatus">
+            <div class="input-with-unit">
+                <input type="text" id="guagingStatusMin" value="" placeholder="Min Gauging">
+                <span class="unit">No.</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="guagingStatusMax" value="" placeholder="Max Gauging">
+                <span class="unit">No.</span>
+            </div>
+            <button id="toggleGuagingStatus">Toggle Gauging Status</button>
+        </div>
+        <div class="cellOne">
+            <div class="input-with-unit">
+                <input type="text" id="cellOneMin" value="" placeholder="Min Cell1">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellOneMax" value="" placeholder="Max Cell1">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellOne">Toggle Cell 1 Voltage</button>
+        </div>
+        <div class="cellTwo">
+            <div class="input-with-unit">
+                <input type="text" id="cellTwoMin" value="" placeholder="Min Cell2">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellTwoMax" value="" placeholder="Max Cell2">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellTwo">Toggle Cell 2 Voltage</button>
+        </div>
+        <div class="cellThree">
+            <div class="input-with-unit">
+                <input type="text" id="cellThreeMin" value="" placeholder="Min Cell3">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellThreeMax" value="" placeholder="Max Cell3">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellThree">Toggle Cell 3 Voltage</button>
+        </div>
+        <div class="cellFour">
+            <div class="input-with-unit">
+                <input type="text" id="cellFourMin" value="" placeholder="Min Cell4">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellFourMax" value="" placeholder="Max Cell4">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellFour">Toggle Cell 4 Voltage</button>
+        </div>
+        <div class="cellFive">
+            <div class="input-with-unit">
+                <input type="text" id="cellFiveMin" value="" placeholder="Min Cell5">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellFiveMax" value="" placeholder="Max Cell5">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellFive">Toggle Cell 5 Voltage</button>
+        </div>
+        <div class="cellSix">
+            <div class="input-with-unit">
+                <input type="text" id="cellSixMin" value="" placeholder="Min Cell6">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellSixMax" value="" placeholder="Max Cell6">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellSix">Toggle Cell 6 Voltage</button>
+        </div>
+         <div class="cellSeven">
+            <div class="input-with-unit">
+                <input type="text" id="cellSevenMin" value="" placeholder="Min Cell7">
+                <span class="unit">mV</span>
+            </div>
+            <div class="input-with-unit">
+                <input type="text" id="cellSevenMax" value="" placeholder="Max Cell7">
+                <span class="unit">mV</span>
+            </div>
+            <button id="toggleCellSeven">Toggle Cell 7 Voltage</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

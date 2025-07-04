@@ -1,0 +1,335 @@
+/* Reset margins and paddings */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Set background color for the body */
+body {
+  background-color: rgba(13, 35, 41, 255);
+}
+
+/* App Container */
+.tier0App {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+/* Title Section */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title img {
+  height: 63px;
+  width: 127px;
+  margin-right: 10px;
+}
+
+.title p {
+  color: rgba(223, 233, 234, 255);
+  font-size: xx-large;
+}
+
+/* Input Fields */
+.inputFields {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  width: 552px;
+  justify-content: flex-end;
+}
+
+.addressContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.baudRate select {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(223, 233, 234, 255);
+  padding: 10px;
+}
+
+.comPort input {
+  margin: 5px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.comPort select {
+  margin: 5px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.comPort button {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  color: black;
+}
+
+.comPort button:active {
+  background-color: rgba(223, 233, 234, 255);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Logging Controls */
+.loggingControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.loggingControls select {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(223, 233, 234, 255);
+  padding: 10px;
+}
+
+.loggingControls input {
+  margin: 5px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.loggingControls button {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  color: black;
+}
+
+.loggingControls span{
+  color: rgba(223, 233, 234, 255);
+  font-size: large;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-connected {
+  background-color: rgba(37,168,165,255);
+}
+
+.status-disconnected {
+  background-color: rgba(255,122,109,255);
+}
+
+/* Control Buttons */
+.controlButtons img {
+  height: 30px;
+  width: 30px;
+}
+
+.controlButtons {
+  margin: 10px;
+  background-color: rgba(223, 233, 234, 255);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+/* Tier Components */
+.tier1App,
+.tier2App,
+.tier3App {
+  transition: height 0.5s ease;
+  overflow: auto;
+}
+
+.tier3App {
+  display: flex;
+  flex-direction: column;
+}
+
+.tier1Big,
+.tier2Big,
+.tier3Big {
+  margin: 20px;
+  background-color: rgba(42, 80, 86, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tier1Small,
+.tier2Small,
+.tier3Small {
+  margin: 20px;
+  background-color: rgba(42, 80, 86, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tier1Small {
+  height: 130px;
+}
+
+.tier2Small {
+  height: 150px;
+}
+
+.tier3Small {
+  height: 120px;
+}
+
+.tier1Big {
+  height: 250px;
+}
+
+.tier2Big {
+  height: 300px;
+}
+
+.tier3Big {
+  height: 500px;
+}
+
+/* Serial Number Section */
+
+.tier1Control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.serialNumber{
+  margin: 0px 20px;
+  color: rgba(223, 233, 234, 255);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+
+.footer p {
+  color: rgba(223, 233, 234, 255);
+  margin-right: 5px;
+}
+
+.companyInfo{
+  display: flex;
+}
+
+/* Legend Styles */
+
+.tier3Control,
+.tier2Control{
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend {
+  display: flex;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  color: rgba(223, 233, 234, 255);
+}
+
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid #000;
+}
+
+.color-box.green {
+  background-color: rgba(37,168,165,255);
+}
+
+.color-box.red {
+  background-color: rgba(255,122,109,255);
+}
+
+.color-box.white {
+  background-color: rgba(179,200,200,255);
+}
+
+.connection-settings-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.connection-settings-button:hover {
+  background-color: #45a049;
+}
+
+/* Battery Status Header */
+.batteryStatusHeader {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-225%);
+  flex: 0 0 auto;
+}
+.statusIndicatorHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusTextHeader {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid;
+  min-width: 80px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusTextHeader.charging {
+  color: #2bc54f;
+  border-color: #2bc54f;
+}
+
+.statusTextHeader.discharging {
+  color: #dd1125;
+  border-color: #dd1125;
+}
+.statusTextHeader.idle {
+  color: whitesmoke;
+  border-color: whitesmoke;
+}

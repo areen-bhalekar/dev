@@ -1,0 +1,41 @@
+{
+  "name": "battery-health-hub",
+  "productName": "battery-health-hub",
+  "version": "1.0.0",
+  "description": "PLs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron:start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "Battery Health Hub",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./assets/logo_9th.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "./assets/logo_9th.ico",
+      "uninstallerIcon": "./assets/logo_9th.ico",
+      "uninstallDisplayName": "Uninstaller",
+      "license": "license.html",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "Shardul, Areen",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "antd": "^5.26.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "serialport": "^12.0.0"
+  }
+}

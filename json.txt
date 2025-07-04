@@ -1,0 +1,24 @@
+{
+  "name": "electron-2ndapp",
+  "version": "1.0.0",
+  "description": "PLs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron:start": "electron ."
+  },
+  "author": "Shardul",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.1"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0"
+  },
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "build": {
+    "productName": "Battery Health Hub"
+  }
+}

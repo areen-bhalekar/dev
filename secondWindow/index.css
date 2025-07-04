@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(13, 35, 41, 255);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgba(223, 233, 234, 255);
+    font-size: xx-large;
+}
+
+.inputValues {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px;
+    padding: 10px 0;
+    background-color: rgba(42, 80, 86, 255);
+    border-radius: 10px;
+}
+
+#timeframeSelect {
+    background-color: rgba(223, 233, 234, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#btn {
+    background-color: rgba(223, 233, 234, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.minMaxValues {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 10px;
+    background-color: rgba(42, 80, 86, 255);
+    border-radius: 10px;
+}
+
+.minMaxValues div {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.minMaxValues div input {
+    background-color: rgba(223, 233, 234, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.minMaxValues div button {
+    background-color: rgba(223, 233, 234, 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 167px;
+}
+
+/* Styles for input fields with units */
+.input-with-unit {
+    position: relative;
+    display: inline-block;
+}
+
+.input-with-unit input {
+    padding-right: 40px; /* Make space for the unit */
+}
+
+.input-with-unit .unit {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(13, 35, 41, 255);
+    font-weight: bold;
+    pointer-events: none; /* Prevent unit from interfering with input */
+    font-size: 14px;
+}
